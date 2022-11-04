@@ -5,7 +5,9 @@
 --DarkGrayishBlue: hsl(217, 19%, 24%);
 --DarkBlue: hsl(218, 23%, 16%);
 }
-
+* {
+    box-sizing: border-box;
+}
 html{
     background-color: var(--DarkBlue);
     font-family: 'Manrope', sans-serif;
@@ -24,7 +26,7 @@ html{
     flex-direction: column;
     gap: 25px;
     position: relative;
-    max-width: 400px;
+    max-width: 500px;
     padding: 45px;
     background-color: var(--DarkGrayishBlue);
     border-radius: 12px;
@@ -57,8 +59,27 @@ html{
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    transition: box-shadow 0.1s ease-in-out;
+}
+.advice__btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 40px 2px hsl(150, 100%, 66%,0.3);
+    
 }
 
 .advice__btn-img{
     vertical-align: middle;
+}
+
+@media (max-width:768px){
+    body{
+        margin: 0 20px
+    }
+    .advice{
+        width: 100%;
+        padding: 18px;
+    }
+    .advice__divider-img{
+        margin-bottom: 45px;
+    }
 }
