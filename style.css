@@ -1,3 +1,64 @@
+:root{
+--LightCyan:hsl(193, 38%, 86%);
+--NeonGreen: hsl(150, 100%, 66%);
+--GrayishBlue: hsl(217, 19%, 38%);
+--DarkGrayishBlue: hsl(217, 19%, 24%);
+--DarkBlue: hsl(218, 23%, 16%);
+}
+
 html{
-    background-color: tomato;
+    background-color: var(--DarkBlue);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.advice{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    max-width: 400px;
+    padding: 45px;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.advice__heading{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--NeonGreen);
+    margin: 0;
+}
+
+.advice__text{
+    font-size: 28px;
+    color: var(--LightCyan);
+    margin: 0;
+}
+.advice__divider-img{
+    margin-bottom: 25px;
+}
+.advice__btn{
+    position: absolute;
+    bottom: calc(0% - 35px);
+    left: calc(50% - 35px);
+
+    background-color: var(--NeonGreen);
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.advice__btn-img{
+    vertical-align: middle;
 }
