@@ -13,6 +13,10 @@ html{
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 .main{
     display: flex;
     justify-content: center;
@@ -33,15 +37,24 @@ html{
     text-align: center;
 }
 
+.advice--hidden{
+    display: none;
+}
+
 .advice__heading{
     font-size: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--NeonGreen);
     margin: 0;
+    font-weight: 500;
 }
 
 .advice__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
     font-size: 28px;
     color: var(--LightCyan);
     margin: 0;
@@ -60,6 +73,7 @@ html{
     height: 70px;
     border-radius: 50%;
     transition: box-shadow 0.1s ease-in-out;
+
 }
 .advice__btn:hover{
     cursor: pointer;
@@ -69,17 +83,13 @@ html{
 
 .advice__btn-img{
     vertical-align: middle;
-}
+    transition: scale 0.1s ease-in-out;
 
-.loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
-  }
+}
+.advice__btn:hover .advice__btn-img{
+    scale: 1.05;
+    
+}
 
 @media (max-width:768px){
     body{
