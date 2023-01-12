@@ -10,7 +10,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [Links](#links)
   - [Built with](#built-with)
 
-
 ## Overview
 
 ### The challenge
@@ -27,8 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [here](https://serene-peony-644691.netlify.app/)
-
+- Live Site URL: [here](https://curious-marigold-de29f3.netlify.app/)
 
 ### Built with
 
